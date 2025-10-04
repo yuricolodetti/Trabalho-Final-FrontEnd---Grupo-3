@@ -5,21 +5,84 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://i.pinimg.com/originals/9c/98/22/9c9822a872aadcc57e2dfb3be7866780.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+main {
+    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    padding: 20px 15px;
 }
 
-.container-2 {
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #f0f0f0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffffff; 
+}
+
+.navbar-nav .nav-link:hover { 
+    color: #00bcd4; 
+    transform: scale(1.03);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #f0f0f0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#palco {
     width: 100%;
-    max-width: 500px;
-    background-color: rgb(145, 145, 145);
+    max-width: 600px;
+    background-color: rgb(40, 40, 40);
+    opacity: 98%; 
     color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .texto-2 {
@@ -27,15 +90,10 @@ body {
     margin-bottom: 25px;
 }
 
-.texto-2 h1 {
+.titulo-secao-interativa {
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #00bcd4;
     font-weight: 700;
-}
-
-.texto-2 p {
-    font-size: 1.1rem;
-    color: #f0f0f0;
 }
 
 .formulario-2 {
@@ -44,35 +102,45 @@ body {
     gap: 1rem;
 }
 
-.formulario-2 input {
+.formulario-2 input, 
+.formulario-2 textarea {
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
     background-color: rgba(0, 0, 0, 0.3);
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: #ffffff; 
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    resize: vertical;
 }
 
-.formulario-2 input::placeholder {
-    color: #cccccc; 
+.formulario-2 input::placeholder,
+.formulario-2 textarea::placeholder {
+    color: #cccccc;
+}
+
+.formulario-2 input:focus,
+.formulario-2 textarea:focus {
+    outline: none;
+    border-color: #00bcd4;
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
 }
 
 .formulario-2 button {
-    width: 100%;
     margin-top: 10px;
-    background-color: rgb(14, 118, 187);
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.1rem;
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
-    transition: 0.3s, background-color 0.3s;
+    font-size: 1.1rem;    
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(14, 118, 187);
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .formulario-2 button:hover {
-    background-color: rgb(18, 142, 224);
+    background-color: rgb(18, 142, 224); 
     cursor: pointer;
-    transform: scale(1.02);
+    transform: scale(1.02); 
 }
