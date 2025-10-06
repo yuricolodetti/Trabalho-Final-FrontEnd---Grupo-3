@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevTunes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- cabeçalho-->
+      <nav class="navbar navbar-expand-lg navbar bg">
+        <div class="cabecalho container">
+          <!-- logo que leva para a home -->
+          <a class="navbar-brand fw-bold" href="index.html">
+            <img
+              src="img/devtunes.png"
+              alt="DevTunes Logo"
+              class="devtunes-logo"
+          /></a>
+          <!-- humburquer para mobile -->
+          <button
+            id="navbarId"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <!-- Botões de navegação -->
+            <ul class="navbar-nav ms-auto text-end">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Homeㅤ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Sobre/sobre.html">Sobreㅤ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contato/contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- conteudo principal da página -->
+    <main class="container text-center my-5">
+      <!-- titulo com o nome do site -->
+      <div class="div-titulo-boas-vindas">
+        <br /><br /><br />
+
+        <img src="img/devtunes.png" alt="devtunes-logo" class="devtunes" />
+        <br /><br /><br /><br />
+      </div>
+
+      <!-- palco principal com os botões que levam para nosso sobre -->
+      <div id="palco" class="p-4 border rounded shadow-sm">
+        <h1 class="titulo-secao-interativa">Palco Principal</h1>
+        <a href="Sobre/equipe5.html" class="link-botao"
+          ><button class="genero-btn genero-1">Raphael Lima</button></a
+        >
+        <a href="Sobre/equipe4.html" class="link-botao"
+          ><button class="genero-btn genero-2">Kauê</button></a
+        >
+        <a href="Sobre/equipe3.html" class="link-botao"
+          ><button class="genero-btn genero-3">Yuri</button></a
+        >
+        <a href="Sobre/equipe2.html" class="link-botao"
+          ><button class="genero-btn genero-4">Fernanda</button></a
+        >
+        <a href="Sobre/equipe1.html" class="link-botao"
+          ><button class="genero-btn genero-5">Adryan</button></a
+        >
+      </div>
+
+      <!-- titulo de chamada + playlist com nossas musicas favoritas -->
+      <div class="spotify-player-container my-5">
+        <h2 class="titulo-boas-vindas mb-4">Escute o som direto do Palco!</h2>
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/3hHAxqCA299AaA1KrorBXG?utm_source=generator&autoplay=1"
+          width="100%"
+          height="352"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+      <!-- carrossel com imagens dos artistas que nos inspiram -->
+      <div class="my-5">
+        <!-- gerencia o carrossel -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!-- barra que mostra qual imagem está selecionada -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+            ></button>
+          </div>
+
+          <h2 class="inspiracoes">
+            Abaixo algumas inspirações dos nossos artistas:
+          </h2>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/linkin.png"
+                class="d-block w-100"
+                alt="Imagem da banda Linkin Park"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/skillet.jpeg"
+                class="d-block w-100"
+                alt="Imagem da banda Skillet"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/travis.jpg"
+                class="d-block w-100"
+                alt="Imagem do artista Travis Scott"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/amy.webp"
+                class="d-block w-100"
+                alt="Imagem da artista Amy Winehouse"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/steve.jpg"
+                class="d-block w-100"
+                alt="Imagem do artista Steve Lacy"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- rodapé da página -->
+    <footer class="text-center">
+      <p class="mb-0">&copy; 2025 - DevTunes. Todos os direitos reservados.</p>
+      <p class="mb-0">
+        Trabalho Final FrontEnd Residencia TIC/Software Serratec 2025.2 - Turma
+        28, Grupo 3.
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JavaScript/scripts.js"></script>
+  </body>
+</html>
