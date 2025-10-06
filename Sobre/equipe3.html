@@ -1,20 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato - DevTunes</title>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Yuri – Sobre a Equipe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar bg">
             <div class="cabecalho container">
@@ -30,32 +28,24 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../Sobre/sobre.html">Sobreㅤ</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link active" href="../Contato/contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Contato/contato.html">Contato</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <br><br><br><br><br><br>
-    <main>
-        <div id="palco" class="p-4 border rounded shadow-sm">
-            <div class="texto-2">
-                <h1 class="titulo-secao-interativa">Da o play com a gente!</h1>
-                <p>Preencha os campos abaixo para agendar um show!</p>
+
+    <main class="container my-5">
+        <div class="sobre-container membro-individual">
+            <img src="../img/Yuri.jpg" alt="Foto de Yuri" class="equipe-foto">
+            <div>
+                <h1 class="titulo-secao-interativa">Yuri Colodetti</h1>
+                <p>Sou Yuri Colodetti, estudante em formação na área de tecnologia.
+                    Atualmente curso Análise e Desenvolvimento de Sistemas pela Estácio e participo da Residência
+                    Fullstack TIC/Software do Serratec/Senai. Tenho interesse tanto em o frontend quanto em backend.
+                    Fora do mapa acadêmico, também sou músico e gamer nas horas vagas.</p>
+                <p><a href="./sobre.html">← Voltar à equipe</a></p>
             </div>
-
-            <form id="contactForm" class="formulario-2">
-                <label for="nameInput" class="visually-hidden">Nome Completo</label>
-                <input type="text" id="nameInput" name="name" placeholder="Seu nome completo" required>
-
-                <label for="emailInput" class="visually-hidden">E-mail</label>
-                <input type="email" id="emailInput" name="email" placeholder="Seu melhor e-mail" required>
-
-                <label for="messageTextarea" class="visually-hidden">Mensagem</label>
-                <textarea id="messageTextarea" name="message" rows="4" placeholder="Deixe sua mensagem..."
-                    required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
         </div>
 
         <div class="spotify-player-container my-5">
@@ -65,14 +55,12 @@
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
             </iframe>
         </div>
-
     </main>
 
     <footer class="text-center">
         <p class="mb-0">&copy; 2025 - DevTunes. Todos os direitos reservados.</p>
         <p class="mb-0">Trabalho Final FrontEnd Residencia TIC/Software Serratec 2025.2 - Turma 28, Grupo 3.</p>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
